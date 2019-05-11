@@ -1,0 +1,135 @@
+.box {
+  padding: 42px 53px;
+}
+
+.solid {
+  height: 0;
+  border-top: 1px solid #d9d9d9;
+  margin: 30px 0;
+}
+.mar-10 {
+  margin: 0 10px;
+}
+.pointer {
+  cursor: pointer;
+}
+.t-center {
+  text-align: center;
+}
+
+.triangle {
+  width: 12px;
+  height: 12px;
+  border-left: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  transform: rotate(45deg);
+  position: relative;
+  top: 15px;
+  left: 6px;
+  z-index: 2;
+  background: #fff;
+}
+
+.activityNameList li {
+  padding: 3px 10px;
+}
+
+.activityNameList li:hover {
+  background-color: #eeeeee;
+  background-image: url(/static/imgs/manage/editor/select.png);
+  background-repeat: no-repeat;
+  background-position: 98% 50%;
+}
+
+.actName {
+  background-color: #eeeeee;
+  background-image: url(/static/imgs/manage/editor/select.png);
+  background-repeat: no-repeat;
+  background-position: 98% 50%;
+}
+
+.imgUpload{
+  
+}
+.font-message{
+	color: #FC4A46;
+	font-size: 12px;
+	height: 0;
+	float: left;
+	//visibility: hidden;
+	position: relative;
+	top: -8px;
+}
+.el-form-item__content{
+	border:0 !important;
+	border-bottom: 0 !important;
+}
+.m2{
+	top:27px;
+}
+.el-button--default {
+  color: #fff;
+  background-color: #fc4a46;
+  border-color: #fc4a46;
+}
+.el-button:hover {
+  color: #5a5a5a;
+  background: #fff;
+}
+.label-button {
+  width: 80px;
+  height: 35px;
+  display: inline-block;
+  background: #fc5c58;
+  text-align: center;
+  line-height: 35px;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: 0.1s;
+}
+.label-button:hover {
+  color: #5a5a5a;
+  background: #fff;
+}
+
+.fu {
+  background: #ff483f;
+  padding: 1px;
+  font-size: 12px;
+  color: #fff;
+  border: 1px solid #ff483f;
+  border-radius: 3px;
+  margin: 0 10px;
+}
+.mar-t-15 {
+  margin: 15px 0;
+}
+.font-warn {
+  font-size: 13px;
+  color: #FC4A46;
+}
+.icon-warn {
+  background: url(/static/imgs/manage/editor/warn.png);
+  display: inline-block;
+  margin: -2px 4px;
+  width: 14px;
+  height: 14px;
+}
+.next {
+  overflow: hidden;
+  zoom: 1;
+}
+.next span,
+.next img {
+  float: right;
+  margin: 0 5px;
+}
+.next img {
+  cursor: pointer;
+}
+.next span {
+  position: relative;
+  top: 6px;
+  color: #000;
+}

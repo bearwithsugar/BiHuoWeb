@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+@import './scss/extends';
+@import './scss/mixins';
+@import './scss/variables';
+@import './scss/function';
+
+.c-main {
+  color: $c-red;
+}
+
+@mixin gradientLR($color1, $color2) {
+  background: -moz-linear-gradient(left, $color1, $color2);
+  background: -webkit-gradient(
+    linear,
+    left 0,
+    right 0,
+    from($color1),
+    to($color2)
+  );
+}

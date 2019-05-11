@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+%clearfix {
+  &:before,
+  &:after {
+    content: '';
+    display: table;
+    height: 0;
+  }
+  &:after {
+    clear: both;
+  }
+}

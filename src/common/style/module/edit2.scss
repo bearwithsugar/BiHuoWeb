@@ -1,0 +1,36 @@
+#app {
+}
+.view,
+.preview {
+  display: inline-block;
+  width: 300px;
+  height: 500px;
+  border: 1px solid #000;
+  .draggable,
+  .s-draggable {
+    display: inline-block;
+    padding: 6px;
+    background: #3a8ee6;
+    border-radius: 5px;
+    color: #333;
+    height: 100px;
+    width: 100px;
+    vertical-align: top;
+    .handel {
+      display: inline-block;
+      padding: 4px;
+      background: #2c3e50;
+      color: #fff;
+    }
+  }
+}
+
+.preview {
+  position: absolute;
+  display: inline-block;
+  width: 300px;
+  height: 500px;
+  border: 1px solid #000;
+  right: 0;
+  top: 0;
+}

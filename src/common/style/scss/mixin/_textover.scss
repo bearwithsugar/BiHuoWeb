@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+@mixin textover($line: 1, $fix: ellipsis) {
+  overflow: hidden;
+  text-overflow: $fix;
+  display: -webkit-box;
+  -webkit-line-clamp: $line;
+  -webkit-box-orient: vertical;
+}

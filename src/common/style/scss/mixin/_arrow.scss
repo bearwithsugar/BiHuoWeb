@@ -1,0 +1,22 @@
+@charset "utf-8";
+@mixin arrow($direction: top, $color: black, $size: 12px) {
+  $dire: (
+    top: 'bottom',
+    bottom: 'top',
+    left: 'right',
+    right: 'left'
+  );
+  display: inline-block;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  font-size: 0;
+  overflow: hidden;
+  border-style: solid;
+  border-width: $size;
+  border-#{map-get($dire, $direction)}-width: ceil($size * 0.7);
+  border-color: transparent;
+  cursor: pointer;
+  border-#{map-get($dire, $direction)}-color: $color;
+  border-#{$direction}: none;
+}

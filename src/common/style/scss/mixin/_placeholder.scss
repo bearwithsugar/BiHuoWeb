@@ -1,0 +1,12 @@
+$browser_prefix: '-moz-', ':-moz-', ':-webkit-input-', '-ms-input-';
+
+@mixin placeholder() {
+  @each $browser in $browser_prefix {
+    input:#{$browser}placeholder {
+      @content;
+    }
+    textarea:#{$browser}placeholder {
+      @content;
+    }
+  }
+}

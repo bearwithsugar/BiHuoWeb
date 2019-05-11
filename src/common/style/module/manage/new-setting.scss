@@ -1,0 +1,498 @@
+.previewPage{
+  font-size: 44px;
+}
+.main {
+  margin: 35px 25px 0 25px;
+  background: #ffffff;
+  position: relative;
+  .title {
+    height: 48px;
+    background: rgba(249, 249, 249, 1);
+    border: 1px solid #e5e5e5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .title > div,
+  .title > div > span {
+    margin: 0 20px;
+  }
+}
+.content {
+  display: flex;
+  margin: 45px auto 0 auto;
+  width: 90%;
+
+  .preview {
+    width: 340px;
+    height: 655px;
+    margin-top: 40px;
+    margin-right: 108px;
+    box-sizing: content-box;
+    position: absolute;
+    top: 90px;
+    left: 40px;
+
+    .phone-main {
+      width: 339px;
+      height: 550px;
+      margin-left: 1px;
+      border-left: 3px solid #f2f3f3;
+      border-right: 3px solid #f2f3f3;
+      position: relative;
+
+      .phone-head {
+        background: #1a1a1f;
+        height: 62px;
+        width: 100%;
+
+        .phone-show {
+          height: 22px;
+          width: 100%;
+          position: relative;
+          top: 3px;
+          background: url(/static/imgs/manage/editor/phone-title1.png);
+        }
+
+        .phone-title {
+          height: 24px;
+          margin-top: 8px;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          color: #fff;
+          background: url(/static/imgs/manage/editor/phone-title2.png);
+          font-size: 14px;
+
+          p{
+            width: 200px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-align: center;
+            text-overflow: ellipsis;
+          }
+        }
+      }
+
+      .phone-content {
+        height: 486px;
+        overflow: auto;
+        background: #fc4d69;
+        img {
+          width: 100%;
+        }
+
+        .music-bar {
+          width: 33px;
+          height: 108px;
+          background: url(/static/imgs/manage/editor/music-bar.png);
+          position: absolute;
+          top: 90px;
+          right: 20px;
+        }
+        .phone-t1 {
+          width: 100%;
+          height: 20xp;
+          text-align: center;
+          background: rgba(255, 255, 255, 0.4);
+          font-size: 12px;
+          position: absolute;
+          z-index: 50;
+        }
+        .phone-mainImg {
+          height: 216px;
+          width: 100%;
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+
+        .t-time {
+          background: rgb(182, 182, 182);
+          color: #fff;
+          padding: 4px 8px;
+          margin: 15px auto;
+          width: 50px;
+        }
+
+        .haggle {
+          width: 304px;
+          background: #fff;
+          margin: auto;
+          position: relative;
+          left: 0.8px;
+
+          .activityName {
+            text-align: center;
+            font-size: 16px;
+            padding: 15px 0;
+          }
+          .haggle-title {
+            padding: 25px 0;
+            text-align: center;
+            font-size: 16px;
+            color: #fff;
+            background: #fc4d69;
+          }
+          .haggle-box {
+            padding: 20px 5px;
+            min-height: 150px;
+
+            .industry-title {
+              img {
+                width: 60px;
+                height: 60px;
+                display: block;
+                margin: auto;
+                border-radius: 50%;
+              }
+            }
+          }
+
+          .title {
+            //font-size: .34rem;
+            color: #313131;
+            text-align: center;
+            font-size: 16px;
+          }
+          .haggle-button {
+            width: 120px;
+            text-align: center;
+            height: 40px;
+            line-height: 40px;
+            border-radius: 8px;
+            color: #fff;
+            //margin:20px auto;
+            background: linear-gradient(to right, #ffae00, #fc4a46);
+          }
+          .haggle-input {
+            width: 200px;
+            height: 36px;
+            border: 1px solid #e94c46;
+            border-radius: 36px;
+            margin: 10px auto;
+            line-height: 36px;
+            color: #979797;
+            padding-left: 20px;
+          }
+          .haggle-collect {
+            padding-bottom: 10px;
+            width: 304px;
+            background: #fff;
+            position: relative;
+
+            .b1 {
+              width: 200px;
+              height: 36px;
+              border-radius: 36px;
+              margin: auto;
+            }
+          }
+
+          .t2 {
+            width: 100%;
+            height: 150px;
+            position: relative;
+            background: url(/static/imgs/manage/editor/t2.png);
+            .t2-content {
+              position: absolute;
+              top: 10px;
+              right: 20px;
+            }
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+          .t3 {
+            width: 103%;
+            height: 12px;
+            position: relative;
+            left: -5px;
+
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+          .t4 {
+            display: flex;
+            width: 100%;
+            height: 45px;
+            justify-content: center;
+            line-height: 34px;
+
+            .t4-t {
+              background: #000;
+              color: #fff;
+              height: 34px;
+              padding: 0 4px;
+              margin: 0 4px;
+
+              border: 1px solid #fff;
+              border-radius: 6px;
+            }
+          }
+          .t5 {
+            display: flex;
+            justify-content: center;
+            height: 50px;
+          }
+          .t6 {
+            width: 100%;
+            height: 10px;
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+          .sponsor-logo {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: block;
+            margin: auto;
+          }
+          .sponsor-phone {
+            width: 150px;
+            height: 30px;
+            border-radius: 36px;
+            line-height: 30px;
+            position: relative;
+            margin: 10px 0;
+          }
+          .sponsor-shop {
+            display: flex;
+            background: #fff6f7;
+            padding: 10px;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            span {
+              width: 15px;
+              height: 15px;
+              display: inline-block;
+              border-radius: 100%;
+              background: linear-gradient(to right, #ffae00, #fc4a46);
+              margin-top: 5px;
+            }
+          }
+          .sponsor-shop-content {
+            width: 60%;
+
+            .font-small {
+              margin: 2px 0;
+            }
+          }
+          .sponsor-do-phone {
+            width: 56px;
+            height: 56px;
+            padding: 8px;
+            color: #fc4f43;
+            text-align: center;
+            border: 1px solid #fc4f43;
+            border-radius: 6px;
+          }
+        }
+
+      }
+
+      .s2 {
+        background: #e0e1e1;
+        padding: 40px 15px 0 15px;
+      }
+
+      .s3 {
+        display: flex;
+
+        .share-box{
+          width: 210px;
+          min-height: 45px;
+          border-radius: 5px;
+          padding: 12px;
+
+          p {
+            width: 186px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+          }
+        }
+        div {
+          background: #fff;
+        }
+      }
+
+      .share-bottom{
+        width: 100%;
+        height: 56px;
+        background: url(/static/imgs/manage/editor/share-bottom.png);
+        background-size: 100%;
+      }
+
+    }
+    .content-foot {
+      width: 100%;
+      height: 20px;
+      text-align: center;
+      color: #fff;
+      position: absolute;
+      left: 0;
+      bottom: 0px;
+      background: rgba(0, 0, 0, 0.4);
+      font-size: 12px;
+    }
+
+    .phone-top {
+      width: 100%;
+      height: 47px;
+      background: url(/static/imgs/manage/editor/phone-top.png);
+    }
+
+    .phone-footer {
+      width: 100%;
+      height: 59px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background: url(/static/imgs/manage/editor/phone-footer.png);
+    }
+
+    img {
+    }
+  }
+
+  .editor {
+    width: 586px;
+    margin-left: 410px;
+
+    .editor-head {
+      height: 18px;
+      margin: 43px 0;
+
+      .el-button--text {
+        color: #fc4a46;
+      }
+
+      .bt-active {
+        color: #000;
+        font-weight: bold;
+        font-size: 18px;
+      }
+    }
+
+    .editor-main {
+      width: 100%;
+
+
+      .activity-img {
+        width: 480px;
+
+        box-sizing: content;
+        padding: 27px 25px;
+        border: 1px solid #d9d9d9;
+        position: relative;
+        top: 10px;
+
+        .img-content {
+          display: flex;
+          justify-content: space-between;
+          img {
+            width: 96px;
+            height: 65px;
+            transition: 0.2s;
+          }
+          img:hover {
+            transform: scale(1.1);
+            box-shadow: 1px 1px 6px rgba(0,0,0,0.8);
+          }
+          img.active{
+            transform: scale(1.1);
+            box-shadow: 1px 1px 6px rgba(0,0,0,0.8);
+          }
+        }
+        .btn {
+          position: absolute;
+          width: 0;
+          height: 0;
+          border-top: 8px solid transparent;
+          border-bottom: 8px solid transparent;
+          border-radius: 2px;
+          top: 54px;
+          cursor: pointer;
+        }
+        .btn-left {
+          left: 6px;
+          border-right: 12px solid rgba(255, 72, 63, 1);
+        }
+        .btn-right {
+          right: 6px;
+          border-left: 12px solid rgba(255, 72, 63, 1);
+        }
+      }
+
+      .music-box {
+      }
+    }
+
+    .editor-more {
+      .editor-more-content {
+        width: 584px;
+        border: 1px solid #d9d9d9;
+        margin: 30px 0;
+
+        .more-head {
+          height: 38px;
+          background: #f2f3f3;
+
+          ul li {
+            float: left;
+            line-height: 38px;
+            text-align: center;
+            width: 120px;
+            font-size: 14px;
+            color: #5a5a5a;
+            border-right: 1px solid #d9d9d9;
+            cursor: pointer;
+
+            a {
+              color: #000;
+            }
+          }
+
+          .active {
+            background: #fff;
+            border-top: 2px solid #fc4a46;
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  height: 75px;
+  line-height: 75px;
+  position: fixed;
+  bottom: 10px;
+  right: -25px;
+  z-index: 50;
+
+  button {
+    width: 120px;
+  }
+
+  .footer-main {
+    width: 50%;
+    display: flex;
+    .el-button:focus {
+      color: #fff;
+      background-color: #fc4a46;
+      border-color: #fc4a46;
+    }
+  }
+}

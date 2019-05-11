@@ -1,0 +1,13 @@
+body {
+  background: transparent;
+}
+.impowerBox .title {
+  display: none
+}
+.impowerBox .qrcode {
+  width: 200px;
+  margin-top: 0;
+}
+.impowerBox .info {
+  width: initial !important;
+}

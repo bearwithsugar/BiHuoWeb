@@ -1,0 +1,649 @@
+@import '../../public';
+.content {
+  padding: 45px 3% 36px 3%;
+  .border-d9 {
+    border-radius: 6px;
+    border: 1px solid #d9d9d9;
+    background: #fff;
+  }
+  .user-box {
+    display: flex;
+
+    padding: 44px 0 44px 48px;
+    .user-head-img {
+      display: inline-block;
+      height: 110px;
+      width: 50%;
+      position: relative;
+      .add {
+        display: inline-block;
+        position: relative;
+        width: 110px;
+        height: 110px;
+        /* background: url(/static/imgs/manage/index/add-head-img.png)
+          no-repeat center; */
+        input {
+          cursor: pointer;
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          opacity: 0;
+        }
+
+        img {
+          border-radius: 50%;
+        }
+      }
+      .add:hover {
+        /* background: url(/static/imgs/manage/index/add-head-img2.png)
+          no-repeat center; */
+      }
+      .user-name {
+        position: absolute;
+        left: 130px;
+        top: 67px;
+        transform: translateY(-50%);
+        .name {
+          color: #161616;
+          font-size: 20px;
+        }
+        .say-hello {
+          color: $c-97;
+          font-size: 18px;
+          span {
+            color: $c-red;
+          }
+        }
+        .time {
+          font-size: 14px;
+          margin-top: 2px;
+          margin-bottom: 14px;
+          .useful {
+            color: $c-97;
+            margin-right: 14px;
+          }
+          .warn {
+            color: $c-red;
+            background: #fff4e9;
+            margin-left: 20px;
+          }
+        }
+        .btn {
+          display: flex;
+          .btn-left {
+            width: 113px;
+            height: 33px;
+            background: rgba(57, 175, 111, 1);
+            opacity: 0.9;
+            border-radius: 6px;
+            padding-top: 4px;
+            text-align: center;
+            cursor: pointer;
+            
+            .icon-level {
+              position: relative;
+              margin-top: 5px;
+              background: transparent;
+              width: 20px;
+              height: 20px;
+              margin-top: 5px;
+            }
+            span {
+              color: #ffffff;
+              font-size: 14px;
+            }
+          }
+          .up-grade {
+            margin-left: 9px;
+            width: 85px;
+            height: 33px;
+            font-size: 14px;
+            border-radius: 6px;
+          }
+        }
+      }
+    }
+    .extra {
+      width: 20%;
+      display: inline-block;
+      vertical-align: top;
+      padding-top: 26px;
+      margin-left: 80px;
+      .t {
+        color: $c-5a;
+        font-size: 18px;
+        margin-bottom: 12px;
+      }
+      .extra-li {
+        width: 186px;
+        .li {
+          word-break: break-all;
+          line-height: 23px;
+        }
+      }
+
+      .li {
+        color: $c-97;
+        font-size: 14px;
+        margin-bottom: 8px;
+      }
+      a {
+        color: $c-97;
+        margin-right: 16px;
+        span {
+          color: $c-red;
+        }
+      }
+    }
+    .adviser {
+      li.li {
+        color: $c-97;
+        font-size: 14px;
+        margin-bottom: 8px;
+        padding-left: 24px;
+        position: relative;
+      }
+      li.li:before,
+      li.li .icon-wx {
+        content: ' ';
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        margin-top: -7.5px;
+      }
+      li.who:before {
+        background: url(/static/imgs/manage/index/icon-who.png)
+          no-repeat center;
+      }
+      li.contact:before {
+        background: url(/static/imgs/manage/index/icon-phone.png)
+          no-repeat center;
+      }
+      li.contact {
+        padding-right: 24px;
+      }
+      li.contact .icon-wx {
+        background: url(/static/imgs/manage/index/icon-wx.png)
+          no-repeat center;
+        right: 0;
+        left: 130px;
+        cursor: pointer;
+      }
+      .icon-wx .wx {
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-align: center;
+        background: #fff;
+        padding: 4px;
+        width: 160px;
+        border: 1px solid #d9d9d9;
+        p {
+          font-size: 14px;
+          color: $c-5a;
+        }
+      }
+    }
+  }
+  .operate {
+    margin-top: 30px;
+    height: 180;
+    li {
+      width: 30%;
+      margin-right: 5%;
+      text-align: center;
+      cursor: pointer;
+      .contain {
+        display: inline-block;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        cursor: pointer;
+        .t {
+          color: #161616;
+          font-size: 28px;
+        }
+        .text {
+          color: $c-97;
+          font-size: 16px;
+        }
+        .icon2 {
+          display: inline-block;
+          width: 50px;
+          height: 50px;
+          margin-bottom: 20px;
+        }
+        .icon-create {
+          background: url(/static/imgs/manage/index/icon-create.png)
+            no-repeat center;
+        }
+        .icon-share {
+          background: url(/static/imgs/manage/index/icon-share.png)
+            no-repeat center;
+        }
+        .icon-spend {
+          background: url(/static/imgs/manage/index/icon-spend.png)
+            no-repeat center;
+        }
+      }
+    }
+    li:last-child {
+      margin-right: 0;
+    }
+    .b1:hover {
+      background: #fc4a46;
+      .text,
+      .t {
+        color: #fff;
+      }
+      .icon-create {
+        background: url(/static/imgs/manage/index/icon-create2.png)
+          no-repeat center;
+      }
+    }
+    .b2:hover {
+      background: #feb822;
+      .text,
+      .t {
+        color: #fff;
+      }
+      .icon-share {
+        background: url(/static/imgs/manage/index/icon-share2.png)
+          no-repeat center;
+      }
+    }
+    .b3:hover {
+      background: #009afe;
+      .text,
+      .t {
+        color: #fff;
+      }
+      .arial {
+        color: #f5de3a;
+      }
+      .icon-spend {
+        background: url(/static/imgs/manage/index/icon-spend2.png)
+          no-repeat center;
+      }
+    }
+  }
+
+  .my-activities {
+    margin-top: 30px;
+    .title {
+      padding-left: 30px;
+      margin-top: 34px;
+    }
+    .con {
+      position: relative;
+      padding-left: 55px;
+      padding-bottom: 45px;
+      display: flex;
+      .left-time {
+        position: relative;
+        left: 0;
+        top: -15px;
+        width: 174px;
+        height: 121px;
+        span {
+          opacity: 0.5;
+          position: relative;
+          padding: 2px 6px;
+          top: 18px;
+          width: 64px;
+          height: 20px;
+          font-size: 12px;
+          color: #ffffff;
+          background: #000;
+        }
+      }
+      .last-img {
+        width: 100%;
+        height: 121px;
+      }
+      .params-box {
+        display: inline-block;
+        vertical-align: bottom;
+        // width: 400px;
+        margin-left: 47px;
+        .port-center {
+          display: inline-block;
+          width: 45px;
+          text-align: center;
+          border: 1px solid $c-red;
+          color: $c-red;
+          font-size: 16px;
+          vertical-align: middle;
+        }
+        .port-title {
+          color: #161616;
+          font-size: 20px;
+          vertical-align: middle;
+          padding-left: 41px;
+          position: relative;
+        }
+        .port-title:before {
+          content: ' ';
+          display: inline-block;
+          width: 1px;
+          height: 16px;
+          background: $c-d2;
+          position: absolute;
+          left: 21px;
+          top: 50%;
+          margin-top: -8px;
+        }
+        .port-time {
+          margin: 10px 0;
+          padding-left: 22px;
+          position: relative;
+          font-size: 12px;
+          color: $c-97;
+        }
+        .port-time:before {
+          content: ' ';
+          display: inline-block;
+          width: 15px;
+          height: 15px;
+          background: url(/static/imgs/manage/index/icon-clock.png)
+            no-repeat center;
+          position: absolute;
+          left: 0;
+          top: 50%;
+          margin-top: -7.5px;
+        }
+        .port-con {
+          li {
+            // width: 90px;
+            height: 30px;
+            margin-right: 2px;
+            border: 1px solid $c-e5;
+            color: $c-97;
+            text-align: center;
+            line-height: 30px;
+            font-size: 14px;
+            padding: 0 6px;
+            cursor: pointer;
+
+            a {
+              color: $c-97;
+            }
+          }
+          li:before {
+            content: ' ';
+            width: 15px;
+            height: 15px;
+            margin-right: 6px;
+            vertical-align: text-top;
+          }
+          .act:before {
+            display: inline-block;
+            background: url(/static/imgs/manage/index/icon-act.png)
+              no-repeat center;
+          }
+          .act2:before {
+            display: inline-block;
+            background: url(/static/imgs/manage/index/icon-act2.png)
+              no-repeat center;
+          }
+          .act3:before {
+            display: inline-block;
+            background: url(/static/imgs/manage/index/icon-act3.png)
+              no-repeat center;
+          }
+          .act4:before {
+            display: inline-block;
+            background: url(/static/imgs/manage/index/icon-act4.png)
+              no-repeat center;
+          }
+          .act5:before {
+            display: inline-block;
+            background: url(/static/imgs/manage/index/icon-act5.png)
+              no-repeat center;
+          }
+          li:hover {
+            border: 1px solid $c-red;
+            background: $c-red;
+            color: #fff;
+
+            a {
+              color: #fff;
+            }
+          }
+          .act:hover:before {
+            background: url(/static/imgs/manage/index/icon-actHover.png)
+              no-repeat center;
+          }
+          .act2:hover:before {
+            background: url(/static/imgs/manage/index/icon-act2Hover.png)
+              no-repeat center;
+          }
+          .act3:hover:before {
+            background: url(/static/imgs/manage/index/icon-act3Hover.png)
+              no-repeat center;
+          }
+          .act4:hover:before {
+            background: url(/static/imgs/manage/index/icon-act4Hover.png)
+              no-repeat center;
+          }
+          .act5:hover:before {
+            background: url(/static/imgs/manage/index/icon-act5Hover.png)
+              no-repeat center;
+          }
+        }
+        .port-data {
+          margin-top: 13px;
+          li {
+            margin-right: 55px;
+
+            p {
+              font-size: 14px;
+              color: #979797;
+              margin-bottom: 4px;
+              width: 60px;
+            }
+            span {
+              font-size: 25px;
+              color: $c-16;
+            }
+            span.c-main {
+              color: $c-red;
+            }
+          }
+        }
+      }
+      .action {
+        width: 20%;
+        margin-left: 5%;
+        margin-top: 50px;
+        li {
+          margin-right: 20px;
+          span {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 1px solid $c-e5;
+          }
+          p {
+            font-size: 14px;
+            color: $c-5a;
+          }
+        }
+        li:last-child {
+          margin-right: 0;
+        }
+        li.copy-link span {
+          background: url(/static/imgs/manage/index/port-oprate/copy-qrcode.png)
+            no-repeat center;
+        }
+        li.copy-port span {
+          background: url(/static/imgs/manage/index/port-oprate/copy-port.png)
+            no-repeat center;
+        }
+        li.delete-port span {
+          background: url(/static/imgs/manage/index/port-oprate/delete-port.png)
+            no-repeat center;
+        }
+        li:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .recommend-activities {
+    margin-top: 30px;
+    padding: 34px 0 30px 0;
+    .left-arrow {
+      display: none;
+    }
+    .right-arrow {
+      display: none;
+    }
+  }
+
+  .my-activities .title,
+  .recommend-activities .title {
+    padding-left: 30px;
+    font-size: 24px;
+    color: $c-5a;
+    position: relative;
+    margin-bottom: 38px;
+    .more {
+      font-size: 16px;
+      color: $c-97;
+      position: absolute;
+      right: 30px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  
+  .recommend-activities .title {
+    margin-bottom: 10px;
+  }
+
+  .shadow:hover {
+    box-shadow: 0px 0px 2px 1px #d9d9d9;
+  }
+  .requestStateTip{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    color: $c-97;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .loading-text {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    color: $c-97;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    .el-icon-loading {
+      color: $c-red;
+      vertical-align: middle;
+      font-size: 1.5em;
+      margin-right: 0.5em;
+    }
+  }
+}
+
+.bind-phone {
+  .bind-header {
+    background: $c-red;
+    padding: 8px 44px 6px 44px;
+    color: #fff;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    .t1 {
+      font-size: 18px;
+    }
+    .t2 {
+      font-size: 14px;
+      color: #fedbdb;
+    }
+  }
+  .params-box {
+    padding: 30px 70px 60px 70px;
+    li {
+      margin-bottom: 18px;
+      .name {
+        display: inline-block;
+        width: 100px;
+        font-size: 16px;
+        color: $c-5a;
+      }
+      .input-box {
+        display: inline-block;
+        position: relative;
+        input {
+          width: 300px;
+          height: 45px;
+          padding: 4px 6px;
+          border-radius: 6px;
+          border: 1px solid #e5e5e5;
+          padding-left: 28px;
+          transition: all linear 0.1s;
+          font-size: 14px;
+        }
+        .code-btn {
+          position: absolute;
+          font-size: 14px;
+          right: 0px;
+          width: 94px;
+          background: #e6e6e6;
+          color: #979797;
+          border-bottom-right-radius: 6px;
+          border-top-right-radius: 6px;
+          transition: all linear 0.1s;
+        }
+      }
+    }
+    li:last-child {
+      margin-bottom: 0;
+    }
+    .ope .input-box {
+      position: static;
+      button {
+        font-size: 18px;
+        height: 45px;
+        width: 140px;
+        border-radius: 6px;
+      }
+    }
+    .ope {
+      position: relative;
+    }
+
+    .ope .yes {
+      background: $c-lred;
+      color: #fff;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .ope .no {
+      background: #e6e6e6;
+      color: #979797;
+    }
+  }
+  .no-again {
+    position: absolute;
+    text-align: right;
+    font-size: 14px;
+    right: 18px;
+    bottom: 18px;
+    color: $c-5a;
+    padding-left: 18px;
+  }
+}

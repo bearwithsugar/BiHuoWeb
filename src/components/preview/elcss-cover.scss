@@ -1,0 +1,57 @@
+// 覆盖elementUI部分组件的样式
+.el-input {
+  margin-top: 1em;
+
+  .el-input__inner {
+    border-color: #e94c46;
+    border-radius: 0.4rem;
+  }
+
+  .suffix-text {
+    line-height: 40px;
+    padding-right: 1em;
+  }
+}
+.el-input__prefix,
+.el-input__suffix {
+  color: #e94c46;
+}
+
+.el-checkbox {
+  display: block;
+  color: #494949;
+  font-size: 0.3rem;
+
+  .el-checkbox__inner {
+    border-color: #e94c46;
+  }
+}
+.el-checkbox + .el-checkbox {
+  margin: 0.3rem 0 0;
+}
+
+.el-tabs {
+  overflow-x: hidden;
+}
+.el-tabs__header {
+  background: #fff;
+  margin: 0;
+
+  .el-tabs__nav-scroll {
+    padding: 0 0.24rem;
+  }
+}
+.el-tabs__item:hover,
+.el-tabs__item.is-active {
+  color: $c-red2 !important;
+}
+.el-tabs__active-bar {
+  background: $c-red2 !important;
+}
+
+.el-dropdown-label {
+  font-size: 0.24rem;
+  padding: 0 1em;
+  color: #525252;
+  border-left: 1px solid #cecece;
+}
